@@ -1,0 +1,14 @@
+
+
+
+- Agregué Palabras claves recomendadas, obtenidas en " Keywordshitter.com ".
+- Agregué el ALT de todas lás imágenes con las que trabajo para poder informar al usuario el contenido de la misma.
+- Organización de " H1, H2, etc... " de manera jerárquica en el index.html. En los demás no, ya que no cuento con más títulos por el momento y el h5 corresponde a footer.
+- Agregué comentarios en el index.html al igual que en _movil-tablet.scss para facilitar sus lecturas.
+- Completé la descripción de los integrantes de la sección "sobrenosotros.html".
+- Normalicé los colores para cada sección de mi página.
+- En sección "materias.html" Agrandé imágenes y las acompañé de descripciones.
+- Aliñé descripciones tanto en "materias.html" como en "sobrenosotros.html".
+- Eliminé un video que tenía de muestra en "sobrenosotros.html" que no sumaba nada y quitaba rendimiento a la página.
+- Creé un 404 en la página de "tipotutoria.html" hasta su futura (próxima) construcción.
+

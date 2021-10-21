@@ -1,0 +1,84 @@
+
+
+body{
+    header{
+        h1{
+            color:#507dbc;
+        }
+    }
+}
+
+.main-materias{
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+ }
+
+
+.img-materia{
+    border: 5px solid #507dbc;
+    border-radius: 9%;
+    position: sticky;
+
+    &:hover{
+    width: 1
+    }
+}
+
+.img-materia-div__general{
+    display: grid;
+    margin-top: 5rem;
+    margin-bottom: 10rem ;
+    height: 800px;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows:  auto auto auto;
+    gap: 2em 3em;
+
+    h2{
+        font-size: 18px;
+        text-align: left;
+    }
+}
+
+.img-materia-div{
+    display: flex;
+    flex-flow: column;
+    margin: 1.5rem;
+}
+
+.description{
+    display: flex;
+    flex-flow: column;
+    padding-left: 2rem;
+
+    h2{
+        text-align: center;
+        padding-right: 2rem;
+    }
+}
+
+.footer-materias{
+    padding-top: 37rem;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2.2em; 
+
+    .footer-materias__a{
+        text-decoration: none;
+        color: #507dbc;
+        text-align: center;
+        font-size: 22px; 
+        
+        &:hover{
+            color: #04080f;
+        }
+    }
+
+    .footer-materias__reg{
+        display: flex;
+        justify-content: space-between;
+        padding: 5rem;
+    }
+}

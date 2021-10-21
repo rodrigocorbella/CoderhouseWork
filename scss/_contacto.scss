@@ -1,0 +1,91 @@
+
+*{
+    font-family: verdana;
+}
+ 
+
+body{
+    header{
+        background-color: #a1c6ea;
+        padding: 2rem;
+        h1{
+            color:#507dbc;
+            font-size: 35px;
+            text-align: center;
+
+        }
+        
+    }
+    .volver{
+        a{
+            text-decoration: none;
+            color: #507dbc;
+            font-size: 18px;
+            padding: 2rem;
+            animation-duration: 2.5s;
+            animation-name: aparecer;
+
+            &:hover{
+                color: #04080f;
+            }
+            
+                @keyframes aparecer {
+                
+                    0% {
+                        opacity: 0;
+                }
+                    100% {
+                        opacity:1;
+                    }
+                 }
+        }
+    }
+}
+main{
+    form{
+        margin-top: 3rem;
+        fieldset{
+            legend{
+                font-size: 20px;
+                padding: 1rem;
+            }
+            section{
+                label{
+                    margin-left: 2rem;
+                }
+            }
+        }
+    }
+}
+.main-contact{
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+
+    
+ }
+
+ .footer-contact{
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 2.2em; 
+
+    .footer-contact__a{
+        text-decoration: none;
+        color: #507dbc;
+        text-align: center;
+        font-size: 22px; 
+        
+        &:hover{
+            color: #04080f;
+        }
+    }
+
+    .footer-contact__reg{
+        display: flex;
+        justify-content: space-between;
+        padding: 5rem;
+    }
+}

@@ -1,0 +1,53 @@
+
+
+body{
+    background-color: rgb(176, 185, 185);
+    
+    
+    .header-index{
+        background-color: rgba(0, 0, 0, 0.336);
+        display: flex;
+        flex-flow: column;  
+
+        .top{
+            color: rgb(221, 221, 204);
+            font-size: 60px;
+            margin: 1.5rem auto;
+            font-family: $generalFont;
+        }
+
+        .nav-index{
+
+
+            ul{
+                font-size: 12px;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: space-between;
+                align-items: center;
+                margin: auto;
+                
+                li{
+                    color: aliceblue;     
+                    font-family: $generalFont;
+                    list-style-type: none;
+                    padding: 2px;
+                    margin: 2px auto;
+                    background-color: rgb(150, 152, 155);
+                    border: 1px solid rgba(0, 0, 0, 0.521);   
+                    
+                     
+                    & a{
+                        color: aliceblue;
+                        text-decoration: none;
+                    }
+                       
+                   ul{
+                        list-style-type: none;
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

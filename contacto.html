@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Este es un sitio de Busqueda de Profesores o Tutores, incluye todo tipo de materias a aprender y un Gran número de profesionales.">
+    <meta name="keywords" content="Profesores, Profesor, Tutor, Clases, Virtual, Virtuales, Aprender, Aprende, On-line, Contacto, Preguntas"/>
+    <link rel="icon" href="../NODE_SASS/multimedia/favicon-32x32.png" type="image/ico/">
+    <link rel="icon" href="../NODE_SASS/multimedia/favicon-32x32.png" type="image/ico/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../NODE_SASS/scss/estilo.css">
+    <title>Tu Prof - Contacto</title>
+</head>
+<body>
+    <header>
+        <h1 class="h1Edit">Contáctanos y Responderemos a la brevedad</h1>
+    </header>
+    <div class="volver">
+        <p>
+            <a href="../NODE_SASS/index.html">Volver a la Main Page</a>
+        </p>
+    </div>
+    <main class="main-contact">
+        <form class="form-contact" action="" method="get">
+            <fieldset class="form-contact__campo">
+                <legend class="form-contact__title" ><b>Formulario de Contacto</b></legend>
+                <section class="form-contact__section" >
+                    <label class="form-contact-label" for="nombre"><b>Escribe tu Nombre</b></label>
+                        <input type="text" name="nombre" placeholder="Nombre">
+                </section>
+                <br><br>
+                <section class="form-contact__section" >
+                    <label class="form-contact-label" for="apellido"><b>Escribe tu Apellido</b>
+                        <input type="text" name="apellido" placeholder="Apellido">
+                    </label>
+                </section>  
+                <br> <br>
+                <section class="form-contact__section" >
+                    <!--Dato requerido 1-->
+                    <label class="form-contact-label" for="email"><b>Escribe tu Email</b></label>
+                    <input type="email" required placeholder="tuprof@gmail.com">
+                </section>
+                <br>
+                <section class="form-contact__section" >
+                    <label class="form-contact-label" for="país"><b>Selecciona tu País</b></label>
+                    <select name="país" id="">
+                        <option value="argentina">Argentina</option>
+                        <option value="bolivia">Bolivia</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="chile">Chile</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="paraguay">Paraguay</option>
+                        <option value="peru">Perú</option>
+                        <option value="uruguay">Uruguay</option>
+                    </select>
+                </section>
+                <br>
+                <section class="form-contact__section" >
+                    <label class="form-contact-label" for="sexo"><b>Género</b></label>
+                    <input type="radio" name="sexo" value="mujer">Mujer
+                    <input type="radio" name="sexo" value="hombre">Hombre
+                    <input type="radio" name="sexo" value="otro">Otro
+                </section>
+                <br>
+                <section class="form-contact__section" >
+                    <label class="form-contact-label" for="nac">Fecha de Nacimiento</label>
+                    <input type="date" name="nac">
+                </section>
+                <br>
+                <section class="form-contact__section" >
+                    <label class="form-contact-label" for="comentario" name="comentario">Deja tu mensaje
+                    </label><br>
+                    <textarea name="comentario" id="" cols="30" rows="10"></textarea>
+                </section>
+                <br>
+                <section class="form-contact__section" >
+                    <!--Dato requerido 2-->
+                    <label class="form-contact-label" for="terminos" name="terminos">Acepto Términos y Condiciones
+                    </label>
+                    <input required type="checkbox" name=terminos>
+                </section>
+                <br>
+                <section class="form-contact__section" >
+                    <input type="submit" type="reset" value="Enviar Datos">
+                </section>
+                <br>
+            </fieldset>
+        </form>     
+        <br>
+    </main>
+    <section>
+        <footer class="footer-contact">
+            <div> 
+                <nav>
+                    <a class="footer-contact__a" href="#top">Llevame al Principio</a></li>
+                </nav>
+            </div>    
+            <div class="footer-contact__reg"> 
+                <h5>Rodrigo Corbella &reg;
+                </h5> 
+                <h5>Para Coderhouse    2021</h5>    
+            </div>       
+        </footer>
+    </section>
+    
+</body>
+</html>

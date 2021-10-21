@@ -1,0 +1,333 @@
+
+$generalFont: "verdana";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: verdana;
+}
+
+//        --------       MOBILE FIRST  / CELPHONE      --------
+
+
+body{
+    background-color: #dae3e5;
+
+    
+    
+    .header-index{
+        background-color: #a1c6ea;
+        display: flex;
+        flex-flow: column; 
+
+
+        .top{
+            color: #507dbc;
+            font-size: 60px;
+            margin: 1rem auto;
+            font-family: $generalFont;
+            animation-duration: 2.5s;
+            animation-name: aparecer;
+            
+                @keyframes aparecer {
+                
+                    0% {
+                        opacity: 0;
+                }
+                    100% {
+                        opacity:1;
+                    }
+                 }
+            }
+        }
+
+        .nav-index{
+            margin: 1rem auto 0.2rem auto;
+
+
+            ul{
+                font-size: 10px;
+                font-family: $generalFont;
+                display: flex;
+                flex-flow: row wrap;
+                gap: 5px;
+
+                
+
+                li{    
+                    font-family: $generalFont;
+                    list-style-type: none;
+                    padding: 2px;
+                    margin: 2px auto;
+                    background-color: #507dbc;
+                    border: 1px solid r#a1c6ea;   
+                    
+                     
+                    & a{
+                        color: #04080f;
+                        text-decoration: none;
+                    }
+                       
+                   ul{
+                        list-style-type: none;
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+.main-index{
+    h2{
+        text-align: center;
+    }
+
+    .professors-index{
+        display: flex;
+        flex-flow: column;
+        
+        div{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+
+            img{
+                border: #507dbc 0.2px dotted;
+                border-radius: 20%;
+            }
+
+            a{
+                
+                text-decoration: none;
+                color: #04080f;
+                margin: 0 0 1rem 1rem;
+                
+            }
+
+            div{
+                display: flex;
+                ;
+                margin-bottom: 2rem;
+
+            
+
+                & table{
+                    display: flex;
+                    flex-flow: column;
+                    margin: 0 auto;
+                }
+
+                .professors-index_table th, td{
+                    padding: 1px;
+                    border: 1px solid #04080f;
+                    min-width: 20px;
+                }
+            }         
+        }
+    }   
+}
+
+.main-text-index{
+    
+    h3{
+        text-align: center;
+        margin: 3rem auto 1rem auto;
+    }
+
+    p{
+        width: 85%;
+        margin: 0.5rem auto;
+    }
+}
+
+.contacto{
+    margin: 2rem 0 0 0;
+    background-color: #507dbc;
+    text-align: center;
+    ;
+    a{
+        font-family: $generalFont;
+        color: #04080f;
+    }
+}
+
+.footer-index{
+
+    & div nav a{
+        text-decoration: none;
+        color: #507dbc;
+        text-align: center;
+    } 
+
+
+    &__reg{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        margin: 3rem auto;
+        
+        & h5{
+            margin: 1rem;
+            color: #04080f;;
+        }
+        
+    }
+
+}
+
+//        --------        TABLET / PHABLET       --------
+
+@media (min-width: 767px){
+
+    body{
+        .header-index{
+            flex-flow: row;
+            justify-content: space-between;
+            align-items: center;
+            
+            .top{
+                font-size: 80px;
+            }
+
+            .nav-index{
+                ul{
+                    li{
+                        a{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+
+
+    .main-index{
+        
+        h2{
+            text-align: center;
+            margin-top: 4rem;
+        }
+        .professors-index{
+        
+            flex-flow: wrap;
+            
+            
+            div{
+                
+                display: inline-block; 
+                margin: 2rem auto; 
+                              
+               
+                
+                img{
+                    border-radius: 40%;
+                    margin: 1rem;
+                    width: 160px;
+
+                }
+
+                div{
+                    
+                    flex-flow: row;
+                    justify-content: space-between;
+                }
+                
+
+            }
+        }
+    } 
+}
+
+.footer-index__reg{
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+//        --------        LAPTOP / PC        --------
+
+@media (min-width: 1023px){
+
+    body{
+        .header-index{
+
+            .top{
+                font-size: 100px;
+                margin: 2rem auto;
+
+            }
+
+            .nav-index{
+                ul{
+                    li{
+                        a{
+                            font-size: 15px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+
+    }
+
+    .main-index{
+        h2{
+            font-size: 32px;
+            margin-top: rem;
+            margin-bottom: 2rem;
+        }
+
+        .professors-index{
+            div{
+                img{
+                    width: 200px;
+                }
+
+            }
+        }
+    }
+    .main-text-index{
+        h2{
+            margin-bottom: 3rem;
+        }
+        p{
+            font-size: 20px;
+            margin-bottom: 2rem;
+        }
+    }
+
+    .contacto{
+        h4{
+            font-size: 25px;
+        }
+        
+    }
+
+    .footer-index{
+
+        & div nav a{
+            font-size: 22px;
+
+            &:hover{
+                box-shadow: #507dbc;
+                color: #04080f;
+            }
+        }
+    }
+
+
+}
+    
+    
+
+
+
+
+
