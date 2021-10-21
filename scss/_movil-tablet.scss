@@ -143,11 +143,21 @@ body{
     }
 }
 
+.flecha{
+
+    p{
+        font-size: 60px;
+        text-align: center;
+        padding-bottom: -2rem;
+        margin-bottom: -2rem;
+    }
+}
+
 .contacto{
     margin: 2rem 0 0 0;
     background-color: #507dbc;
     text-align: center;
-    ;
+    
     a{
         font-family: $generalFont;
         color: #04080f;

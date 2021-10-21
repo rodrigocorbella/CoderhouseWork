@@ -165,6 +165,13 @@ body .nav-index ul li ul {
   margin: 0.5rem auto;
 }
 
+.flecha p {
+  font-size: 60px;
+  text-align: center;
+  padding-bottom: -2rem;
+  margin-bottom: -2rem;
+}
+
 .contacto {
   margin: 2rem 0 0 0;
   background-color: #507dbc;
