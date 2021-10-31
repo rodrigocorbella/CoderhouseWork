@@ -11,41 +11,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../NODE_SASS/scss/estilo.css">
+    <link rel="stylesheet" type="text/css" href="scss/estilo.css">
     <title>Tu Prof - Contacto</title>
 </head>
-<body>
-    <header>
+<body class="body-contact">
+    <header class="header-contact">
         <h1 class="h1Edit">Contáctanos y Responderemos a la brevedad</h1>
     </header>
-    <div class="volver">
+    <div class="volver-contact">
         <p>
-            <a href="../NODE_SASS/index.html">Volver a la Main Page</a>
+            <a href="index.html">Volver a la Main Page</a>
         </p>
     </div>
     <main class="main-contact">
         <form class="form-contact" action="" method="get">
             <fieldset class="form-contact__campo">
-                <legend class="form-contact__title" ><b>Formulario de Contacto</b></legend>
+                <legend class="form-contact__title" >Formulario de Contacto</legend>
                 <section class="form-contact__section" >
-                    <label class="form-contact-label" for="nombre"><b>Escribe tu Nombre</b></label>
+                    <label class="form-contact-label" for="nombre">Escribe tu Nombre</label>
                         <input type="text" name="nombre" placeholder="Nombre">
                 </section>
                 <br><br>
                 <section class="form-contact__section" >
-                    <label class="form-contact-label" for="apellido"><b>Escribe tu Apellido</b>
+                    <label class="form-contact-label" for="apellido">Escribe tu Apellido
                         <input type="text" name="apellido" placeholder="Apellido">
                     </label>
                 </section>  
                 <br> <br>
                 <section class="form-contact__section" >
                     <!--Dato requerido 1-->
-                    <label class="form-contact-label" for="email"><b>Escribe tu Email</b></label>
-                    <input type="email" required placeholder="tuprof@gmail.com">
+                    <label class="form-contact-label" for="email">Escribe tu Email</label>
+                        <input type="email" required placeholder="tuprof@gmail.com">
                 </section>
                 <br>
                 <section class="form-contact__section" >
-                    <label class="form-contact-label" for="país"><b>Selecciona tu País</b></label>
+                    <label class="form-contact-label" for="país">Selecciona tu País</label>
                     <select name="país" id="">
                         <option value="argentina">Argentina</option>
                         <option value="bolivia">Bolivia</option>
@@ -59,7 +59,7 @@
                 </section>
                 <br>
                 <section class="form-contact__section" >
-                    <label class="form-contact-label" for="sexo"><b>Género</b></label>
+                    <label class="form-contact-label" for="sexo">Género</label>
                     <input type="radio" name="sexo" value="mujer">Mujer
                     <input type="radio" name="sexo" value="hombre">Hombre
                     <input type="radio" name="sexo" value="otro">Otro
@@ -105,6 +105,5 @@
             </div>       
         </footer>
     </section>
-    
 </body>
 </html>
