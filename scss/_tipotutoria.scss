@@ -76,13 +76,18 @@
     }
 
     .footer-tipotutoria{
-
+        
         margin: 1rem auto 5rem auto;
-
-        & div nav a{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        
+    
+        a{
             text-decoration: none;
             color: #507dbc;
-            text-align: center;
+            text-align: center;  
+                
         } 
     
     
@@ -150,8 +155,7 @@
         }
     
         .footer-tipotutoria{
-    
-            margin: 5rem auto 5rem auto;
+
     
             a{
                 font-size: 25px;
@@ -196,6 +200,7 @@
         }
     
         .footer-tipotutoria{
+            margin-top: 9rem;
             
             
             &__reg{

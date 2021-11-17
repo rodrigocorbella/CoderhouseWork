@@ -957,9 +957,19 @@ body .nav-index ul li ul {
 
 .body-tipotut .footer-tipotutoria {
   margin: 1rem auto 5rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.body-tipotut .footer-tipotutoria div nav a {
+.body-tipotut .footer-tipotutoria a {
   text-decoration: none;
   color: #507dbc;
   text-align: center;
@@ -1012,9 +1022,6 @@ body .nav-index ul li ul {
   }
   .body-tipotut .section-tipotut p {
     font-size: 22px;
-  }
-  .body-tipotut .footer-tipotutoria {
-    margin: 5rem auto 5rem auto;
   }
   .body-tipotut .footer-tipotutoria a {
     font-size: 25px;
