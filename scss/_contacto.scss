@@ -1,29 +1,60 @@
+//        --------       MOBILE FIRST  / CELPHONE      --------
 
-*{
-    font-family: verdana;
-}
- 
 
-body{
-    header{
+.body-contact{
+
+    .header-contact{
         background-color: #a1c6ea;
-        padding: 2rem;
+        margin: 0 auto;
+        padding: 0.3rem;
+
         h1{
             color:#507dbc;
-            font-size: 35px;
+            font-size: 25px;
             text-align: center;
-
+            font-weight: bold;
         }
         
     }
-    .volver{
-        a{
-            text-decoration: none;
-            color: #507dbc;
-            font-size: 18px;
-            padding: 2rem;
-            animation-duration: 2.5s;
-            animation-name: aparecer;
+
+    .main-contact{
+        width: 98%;
+        margin: 2rem auto;
+        
+        .form-contact__campo{
+
+            .form-contact__title{
+                font-size: 15px;
+                margin-bottom: 1rem;
+                padding: 0 0.3rem 0.3rem 0.3rem;
+            }
+
+            section{
+
+                label{
+                    font-size: 15px;
+
+                    input{
+                        font-size: 15px;
+                    }
+                }
+            }
+            
+        }
+    
+        
+    }     
+}
+
+.volver-contact{
+
+    a{
+        text-decoration: none;
+        color: #507dbc;
+        font-size: 18px;
+        padding: 0.5rem;
+        animation-duration: 2.5s;
+        animation-name: aparecer;
 
             &:hover{
                 color: #04080f;
@@ -32,60 +63,156 @@ body{
                 @keyframes aparecer {
                 
                     0% {
-                        opacity: 0;
-                }
+                    opacity: 0;
+                    }
                     100% {
                         opacity:1;
                     }
-                 }
-        }
+                }
     }
 }
-main{
-    form{
-        margin-top: 3rem;
-        fieldset{
-            legend{
-                font-size: 20px;
-                padding: 1rem;
+
+.footer-contact{
+
+    div{
+
+        nav{
+            text-align: center;
+        }
+    }
+
+    a{
+        text-decoration: none;
+        color: #507dbc;       
+    }
+
+    &__reg{
+      display: flex; 
+      flex-flow: column;
+      align-items: center;
+      margin: 3rem auto; 
+
+      h5{
+          font-size: 12px;
+          margin: 1rem;
+          color: #04080f;
+      }
+    }
+}
+
+
+//        --------        TABLET / PHABLET       --------
+
+@media (min-width: 767px){
+
+    .body-contact{
+
+        .header-contact{
+            h1{
+                font-size: 30px;
             }
-            section{
-                label{
-                    margin-left: 2rem;
+        }
+    
+        .main-contact{
+            width: 760px;
+    
+            .form-contact__campo{
+    
+                section{
+                    text-align: center;
+
+                    label{
+                        font-size: 20px;
+
+                        input{
+                            font-size: 20px;
+                        }
+                    }
+    
+                }
+    
+                .form-contact__title{
+                    font-size: 25px;
                 }
             }
         }
     }
-}
-.main-contact{
-    width: 85%;
-    max-width: 850px;
-    margin: 0 auto;
 
-    
- }
-
- .footer-contact{
-    width: 80%;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    line-height: 2.2em; 
-
-    .footer-contact__a{
-        text-decoration: none;
-        color: #507dbc;
-        text-align: center;
-        font-size: 22px; 
+    .volver-contact{
         
-        &:hover{
-            color: #04080f;
+        a{
+            font-size: 22px;
         }
     }
 
-    .footer-contact__reg{
-        display: flex;
-        justify-content: space-between;
-        padding: 5rem;
+    .footer-contact{
+
+        a{
+            font-size: 25px;
+        }
+
+        &__reg{
+            flex-flow: row;
+            justify-content: space-between;
+            align-items: center;
+
+            h5{
+                font-size: 20px;
+                font-weight: 300;
+            }
+        }
     }
+    
 }
+
+//        --------        LAPTOP / PC        --------
+
+@media (min-width: 1023px){
+
+    .body-contact{
+
+        .header-contact{
+            h1{
+                font-size: 35px;
+            }
+        }
+    
+        .main-contact{
+            width: 85%;
+            
+    
+            .form-contact__campo{
+    
+                section{
+                    text-align: left;
+    
+                }
+    
+                .form-contact__title{
+                    font-size: 28px;
+                }
+            }
+        }
+    }
+
+
+    .footer-contact{
+
+        a{
+            font-size: 25px;
+        }
+
+        &__reg{
+            flex-flow: row;
+            justify-content: space-between;
+            align-items: center;
+
+            h5{
+                font-size: 20px;
+            }
+        }
+    }
+
+}
+
+

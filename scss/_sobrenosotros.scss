@@ -1,14 +1,240 @@
-body{
+
+//        --------       MOBILE FIRST  / CELPHONE      --------
+
+.body-sobreNosotros{
+
+    header{
+        background-color: #a1c6ea;
+
+        h1{
+            color: #507dbc;
+            font-size: 25px;
+            text-align: center;
+            font-weight: bold;
+        }
+    }
+
+    .volver-sobreNosotros{
+            
+        a{
+            text-decoration: none;
+            color: #507dbc;
+            font-size: 18px;
+            padding: 0.5rem;
+            animation-duration: 2.5s;
+            animation-name: aparecer;
+    
+                &:hover{
+                    color: #04080f;
+                }
+                
+                    @keyframes aparecer {
+                    
+                        0% {
+                        opacity: 0;
+                        }
+                        100% {
+                            opacity:1;
+                        }
+                    }
+        }
+
+    }
+
     .section{
+        margin: 1rem auto;
+
         div{
             display: flex;
             flex-flow: column;
             align-items: center;
-            margin: 2rem 0 2rem 0;
-            
-        }
-        
-    }
-    
+            margin: 1rem auto;
 
+            div{
+
+                h2{
+                    font-size: 20px;
+                    text-align: center;
+                    
+                }
+
+                div{
+
+                    img{
+                        width: 200px;
+                        border-radius: 12%;
+                        box-shadow: 1px 2px 10px;
+                        margin-bottom: 1rem;
+                    }
+
+                    p{
+                        width: 85%;
+                        
+                        
+                    }
+                }
+            }  
+        }
+    }
+    .footer-sobreNosotros{
+
+        text-align: center;
+
+        & div nav a{
+            text-decoration: none;
+            color: #507dbc;
+            text-align: center;
+        } 
+    
+    
+        &__reg{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            margin: 3rem auto;
+            
+            & h5{
+                font-size: 12px;
+                margin: 1rem;
+                color: #04080f;
+            } 
+        }
+    }
 }
+
+//        --------        TABLET / PHABLET       --------
+
+@media (min-width: 767px){
+
+    .body-sobreNosotros{
+        
+        header{
+
+            h1{
+                font-size: 40px;
+            }
+        }
+
+        .volver-sobreNosotros{
+
+            a{
+                font-size: 22px;
+            }
+        }
+
+        .section{
+
+            div{
+                flex-flow: column wrap;
+
+                div{
+
+                    h2{
+                        font-size: 28px;
+
+                    }
+
+                    div{
+
+                        img{
+                            width: 320px;
+
+                        }
+
+                        p{
+                            font-size: 20px;  
+                        }
+                    }
+                }
+            }
+        }
+
+        .footer-sobreNosotros{
+
+            a{
+                font-size: 25px;
+            }
+            
+            &__reg{
+                flex-flow: row;
+                justify-content: space-between;
+            
+                h5{
+                    font-size: 20px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
+
+//        --------        LAPTOP / PC        --------
+
+
+@media (min-width: 1023px){
+
+    .body-sobreNosotros{
+        
+        header{
+
+            h1{
+                font-size: 45px;
+            }
+        }
+
+        .volver-sobreNosotros{
+
+            a{
+                font-size: 25px;
+            }
+        }
+
+        .section{
+
+            div{
+                margin: 0;
+                padding: 0;
+                flex-flow: row wrap;
+                gap: 2.5rem;
+                
+
+                div{
+                    width: 320px;
+                    flex-flow: column;
+                    justify-content: space-around;
+                    margin: 1.5rem auto 2rem auto;
+
+                    h2{
+                        font-size: 28px;
+                        
+                    }
+
+                    div{
+
+                        img{
+                            width: 320px;
+                        }
+
+                        p{
+                            font-size: 20px;  
+                        }
+                    }
+                }
+            }
+        }
+        .footer-sobreNosotros{
+
+            margin-top: 9rem;
+            
+            
+            &__reg{
+                h5{
+                    font-size: 30px;
+                    margin-bottom: -2rem;
+                }
+            }
+        }
+    }
+}
+
+

@@ -1,84 +1,209 @@
+//        --------       MOBILE FIRST  / CELPHONE      --------
 
+.body-materias{
 
-body{
-    header{
+    .header-materias{
+        background-color: #a1c6ea;
+        margin: 0 auto;
+        padding: 0.3rem;
+
         h1{
-            color:#507dbc;
-        }
-    }
-}
-
-.main-materias{
-    width: 85%;
-    max-width: 850px;
-    margin: 0 auto;
- }
-
-
-.img-materia{
-    border: 5px solid #507dbc;
-    border-radius: 9%;
-    position: sticky;
-
-    &:hover{
-    width: 1
-    }
-}
-
-.img-materia-div__general{
-    display: grid;
-    margin-top: 5rem;
-    margin-bottom: 10rem ;
-    height: 800px;
-    grid-template-columns: 33% 33% 33%;
-    grid-template-rows:  auto auto auto;
-    gap: 2em 3em;
-
-    h2{
-        font-size: 18px;
-        text-align: left;
-    }
-}
-
-.img-materia-div{
-    display: flex;
-    flex-flow: column;
-    margin: 1.5rem;
-}
-
-.description{
-    display: flex;
-    flex-flow: column;
-    padding-left: 2rem;
-
-    h2{
-        text-align: center;
-        padding-right: 2rem;
-    }
-}
-
-.footer-materias{
-    padding-top: 37rem;
-    width: 80%;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
-    line-height: 2.2em; 
-
-    .footer-materias__a{
-        text-decoration: none;
-        color: #507dbc;
-        text-align: center;
-        font-size: 22px; 
-        
-        &:hover{
-            color: #04080f;
+            color: #507dbc;
+            font-size: 28px;
+            text-align: center;
         }
     }
 
-    .footer-materias__reg{
+    .volver{
+
+        a{
+            text-decoration: none;
+            color: #507dbc;
+            font-size: 18px;
+            padding: 0.5rem;
+            animation-duration: 2.5s;
+            animation-name: aparecer;
+    
+                &:hover{
+                    color: #04080f;
+                }
+                
+                    @keyframes aparecer {
+                    
+                        0% {
+                        opacity: 0;
+                        }
+                        100% {
+                            opacity:1;
+                        }
+                    }
+        }
+    }
+
+    .img-materia-div__general{
         display: flex;
-        justify-content: space-between;
-        padding: 5rem;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin: 3rem 0 3rem 0;
+
+        img{
+            width: 250px;
+            margin: 0.2rem;
+            border-radius: 12%;
+            box-shadow: 1px 2px 15px #507dbc;
+        }
+
+        .description{
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            margin: 0.5rem auto 2.5rem auto;
+
+            h2{
+                font-size: 24px;
+                color: #507dbc;
+            }
+
+            p{
+                font-size: 15px; 
+                color: #04080f;
+            }
+        }
+    }
+
+    .footer-materias{
+
+        div{
+    
+            nav{
+                text-align: center;
+            }
+        }
+    
+        a{
+            text-decoration: none;
+            color: #507dbc;       
+        }
+    
+        &__reg{
+          display: flex; 
+          flex-flow: column;
+          align-items: center;
+          margin: 3rem auto; 
+    
+          h5{
+              font-size: 12px;
+              margin: 1rem;
+              color: #04080f;
+          }
+        }
     }
 }
+
+
+
+
+//        --------        TABLET / PHABLET       --------
+
+
+@media (min-width: 767px){
+
+    .body-materias{
+
+        .header-materias{
+
+            h1{
+                font-size: 40px;
+            }
+        }
+
+        .volver{
+
+            a{
+                font-size: 22px;
+            }
+        }
+
+        .img-materia-div__general{
+    
+            img{
+                width: 280px;
+            }
+    
+            .description{
+                
+    
+                h2{
+                    font-size: 28px;
+                }
+    
+                p{
+                    font-size: 20px; 
+                }
+            }
+        }
+    
+        .footer-materias{
+
+            a{
+                font-size: 22px;       
+            }
+        
+            &__reg{
+              flex-flow: row;
+              justify-content: space-between;
+
+              h5{
+                  font-size: 16px;  
+              }
+            }
+        }
+    }
+}
+
+
+
+
+
+//        --------        LAPTOP / PC        --------
+
+
+@media (min-width: 1023px){
+
+    .body-materias{
+        
+        .img-materia-div{
+            border-radius: 10% 10% 5% 5%;
+        transition: background-color ease-in-out 0.5s;
+            
+            &:hover {
+                h2{
+                    color: #04080f;
+                }
+                border-radius: 10% 10% 2% 2%;
+                background-color: #507dbc;
+            }
+            
+        }
+
+        .footer-materias{
+
+            a{
+                font-size: 25px;       
+            }
+        
+            &__reg{
+              flex-flow: row;
+              justify-content: space-between;
+
+              h5{
+                font-size: 20px;
+                font-weight: 300;
+              }
+            }
+        }
+    }
+    
+
+}
+
