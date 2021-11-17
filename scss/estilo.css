@@ -1061,4 +1061,105 @@ body .nav-index ul li ul {
     margin-bottom: -5rem;
   }
 }
+
+.body-perfiles .header-perfiles {
+  background-color: #a1c6ea;
+  margin: 0 auto;
+  padding: 0.3rem;
+}
+
+.body-perfiles .header-perfiles div h1 {
+  color: #507dbc;
+  font-size: 28px;
+  text-align: center;
+}
+
+.body-perfiles .volver-perfiles a {
+  text-decoration: none;
+  color: #507dbc;
+  font-size: 18px;
+  padding: 0.5rem;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+}
+
+.body-perfiles .volver-perfiles a:hover {
+  color: #04080f;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.body-perfiles .section-perfiles h2 {
+  margin: 5rem auto 0 auto;
+  font-size: 30px;
+  text-align: center;
+}
+
+.body-perfiles .section-perfiles p {
+  margin: 0.5rem auto 5rem auto;
+  text-align: center;
+}
+
+.body-perfiles .footer-perfiles div nav {
+  text-align: center;
+}
+
+.body-perfiles .footer-perfiles__reg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3rem auto;
+}
+
+.body-perfiles .footer-perfiles__reg h5 {
+  font-size: 12px;
+  margin: 1rem;
+  color: #04080f;
+}
+
+@media (min-width: 767px) {
+  .body-perfiles .header-perfiles div h1 {
+    font-size: 45px;
+  }
+  .body-perfiles .volver-perfiles a {
+    font-size: 22px;
+  }
+  .body-perfiles .section-perfiles h2 {
+    font-size: 35px;
+  }
+  .body-perfiles .section-perfiles p {
+    font-size: 20px;
+  }
+  .body-perfiles .footer-perfiles {
+    margin-top: 15rem;
+  }
+  .body-perfiles .footer-perfiles__reg {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row;
+            flex-flow: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .body-perfiles .footer-perfiles__reg h5 {
+    font-size: 16px;
+  }
+}
 /*# sourceMappingURL=estilo.css.map */

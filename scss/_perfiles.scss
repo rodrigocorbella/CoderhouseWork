@@ -1,0 +1,138 @@
+//        --------       MOBILE FIRST  / CELPHONE      --------
+
+.body-perfiles{
+
+    .header-perfiles{
+        background-color: #a1c6ea;
+        margin: 0 auto;
+        padding: 0.3rem;
+
+        div{
+            
+        
+            h1{
+                color: #507dbc;
+                font-size: 28px;
+                text-align: center;
+
+            }
+        }
+    }
+
+    .volver-perfiles{
+        
+        a{
+            text-decoration: none;
+            color: #507dbc;
+            font-size: 18px;
+            padding: 0.5rem;
+            animation-duration: 2.5s;
+            animation-name: aparecer;
+    
+                &:hover{
+                    color: #04080f;
+                }
+                
+                    @keyframes aparecer {
+                    
+                        0% {
+                        opacity: 0;
+                        }
+                        100% {
+                            opacity:1;
+                        }
+                    }
+        }
+    }
+
+    .section-perfiles{
+
+        h2{
+            margin: 5rem auto 0 auto;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        p{
+            margin: 0.5rem auto 5rem auto;
+            text-align: center;
+
+        }
+    }
+
+    .footer-perfiles{
+
+        div{
+    
+            nav{
+                text-align: center;
+            }
+        }
+    
+    
+        &__reg{
+          display: flex; 
+          flex-flow: column;
+          align-items: center;
+          margin: 3rem auto; 
+    
+          h5{
+              font-size: 12px;
+              margin: 1rem;
+              color: #04080f;
+          }
+        }
+    }
+
+}
+
+//        --------        TABLET / PHABLET       --------
+
+
+@media (min-width: 767px){
+
+    .body-perfiles{
+
+        .header-perfiles{
+            
+            div{
+                
+                h1{
+                    font-size: 45px;
+                }
+            }
+        }
+    
+        .volver-perfiles{
+            
+            a{
+                font-size: 22px;
+          
+            }
+        }    
+        .section-perfiles{
+    
+            h2{
+                font-size: 35px;
+            }
+    
+            p{
+                font-size: 20px;
+    
+            }
+        }
+    
+        .footer-perfiles{   
+            margin-top: 15rem;
+        
+            &__reg{ 
+                flex-flow: row;
+                justify-content: space-between;
+        
+              h5{
+                  font-size: 16px;
+                }
+            }
+        }
+    }
+}
